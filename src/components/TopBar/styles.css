@@ -3,13 +3,14 @@
   position: fixed;
   width: 100%;
   left: 0px;
-  top: 56px;
+  /* top: 56px; */
+  top: calc(-1 * var(--body-top-padding, 0) + 80px);
   background-color: #103144;
   padding: 1rem;
   justify-content: center;
 
   @media screen and (max-width: 442px)  {
-    top: 75px;
+    top: calc(-1 * var(--body-top-padding, 0) + 100px);
   }
 }
 
