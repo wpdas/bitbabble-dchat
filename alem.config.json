@@ -3,15 +3,16 @@
   "mainnetAccount": "wendersonpires.near",
   "testnetAccount": "wendersonpires.testnet",
   "name": "Bit Babble",
-  "description": "App description",
+  "description": "BitBabble - A Decentralized Chat (built using Além)",
   "linktree": {
-    "website": "github.com/wpdas/alem"
+    "website": "github.com/wpdas/bitbabble-dchat"
   },
   "image": {
-    "ipfs_cid": "bafkreicjdgat5xsw7vxbosoyygermawhkfi2by3ovg7c6tumrayn4rimty"
+    "ipfs_cid": "bafkreiegyjsgok6ctnurix3shkm7mrbdqzclfqpsh4tltnkxqyuxzgvbk4"
   },
   "tags": [
-    "alem",
+    "bitbabble",
+    "chat",
     "dapp",
     "near",
     "bos"
