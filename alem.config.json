@@ -1,0 +1,32 @@
+{
+  "isIndex": false,
+  "mainnetAccount": "wendersonpires.near",
+  "testnetAccount": "wendersonpires.testnet",
+  "name": "Bit Babble",
+  "description": "App description",
+  "linktree": {
+    "website": "github.com/wpdas/alem"
+  },
+  "image": {
+    "ipfs_cid": "bafkreicjdgat5xsw7vxbosoyygermawhkfi2by3ovg7c6tumrayn4rimty"
+  },
+  "tags": [
+    "alem",
+    "dapp",
+    "near",
+    "bos"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@app/": "src/",
+      "@services/": "src/services/",
+      "@components/": "src/components/",
+      "@contexts/": "src/contexts/"
+    }
+  },
+  "options": {
+    "keepRoute": true,
+    "hideAlemBar": false
+  }
+}

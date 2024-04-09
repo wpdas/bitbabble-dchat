@@ -1,0 +1,57 @@
+.message-right, .message-left {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+
+  .its-me {
+    color: #FFF;
+    padding: 8px 12px;
+  }
+
+  .its-not-me {
+    color: #2C5067;
+    padding: 8px 12px;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #2C5067;
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    text-align: right;
+  }
+
+  .time {
+    color: #ffffffc6;
+    margin-top: -5px;
+    padding-bottom: 8px;
+    padding-right: 12px;
+    font-size: 13px;
+    padding-left: 1rem;
+  }
+}
+
+.message-left {
+  justify-content: left;
+  padding-left: 1rem;
+  padding-right: 3rem;
+
+  .text-container {
+    align-items: flex-start;
+    background-color: #D9E7E8;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    text-align: left;
+  }
+
+  .time {
+    color: #2c5067b7;
+    padding-left: 12px;
+    padding-right: 1rem;
+  }
+}

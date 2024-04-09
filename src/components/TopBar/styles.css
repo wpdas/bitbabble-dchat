@@ -1,0 +1,41 @@
+.topbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 56px;
+  background-color: #103144;
+  padding: 1rem;
+  justify-content: center;
+
+  @media screen and (max-width: 442px)  {
+    top: 75px;
+  }
+}
+
+.left {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  button {
+    background-color: #103144;
+    height: 34px;
+    border: none;
+
+    :hover {
+      background-color: #436e87;
+    }
+  }
+}
+
+.topbar-title {
+  color: #F1FFFD;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.top-bar-margin {
+  width: 100%;
+  height: 90px;
+}
