@@ -1,7 +1,7 @@
+import { useRoutes, context, useMemo } from "alem";
 import Routes from "./screens/Routes";
 import TopBar from "@components/TopBar";
 import BottomBar from "@components/BottomBar";
-import { useRoutes, context, useMemo } from "alem";
 import routesPath from "./screens/routesPath";
 import CenterMessage from "./components/CenterMessage";
 

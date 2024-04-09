@@ -1,7 +1,6 @@
 import buildChatId from "@app/utils/buildChatId";
 import { Social } from "alem";
 
-// TODO: a busca deve ser feita tentando as duas direcoes (from-to e to-from)
 type Props = {
   from: string;
   to: string;
