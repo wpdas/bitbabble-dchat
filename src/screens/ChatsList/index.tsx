@@ -18,7 +18,7 @@ const ChatsList = () => {
 
   return (
     <div className="contacts-list">
-      {!chats.length ? (
+      {chats.length === 0 ? (
         <CenterMessage message="No chat has started yet" />
       ) : (
         <ContactItems accountIds={chats} onSelect={onSelect} />
