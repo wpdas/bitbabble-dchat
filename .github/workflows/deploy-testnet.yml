@@ -7,6 +7,6 @@ jobs:
     uses: wpdas/alem/.github/workflows/deploy-testnet.yml@main
     with:
       signer-account-address: wendersonpires.testnet
-      signer-public-key: ed25519:43XNk6CdzdtYzu67vjGzrCyXJ1N6jFwv3mSUkyFkP73H
+      signer-public-key: ed25519:2H6knaaBf6QYYwpER4ioXxyn7Qgd4ozct4Kmv5A5nCM4
     secrets:
       SIGNER_PRIVATE_KEY: ${{ secrets.TESTNET_SIGNER_PRIVATE_KEY }}
