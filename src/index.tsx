@@ -1,6 +1,7 @@
-import { ModulesProvider, RouterContext, loadExternalStyles } from "alem";
+import { ModulesProvider, RouterContext, context, loadExternalStyles, useEffect } from "alem";
 import Main from "./Main";
 import Spinner from "./components/Spinner/Spinner";
+import cleanUpChatList from "./services/cleanUpChatList";
 
 const App = () => {
   const ready = loadExternalStyles([
@@ -8,6 +9,14 @@ const App = () => {
   ]);
 
   RouterContext();
+
+  useEffect(() => {
+    // clean up storage
+    if (!context.accountId) {
+      console.log("Shoud i go?");
+      cleanUpChatList();
+    }
+  }, [context.accountId]);
 
   return (
     <div className="App">
