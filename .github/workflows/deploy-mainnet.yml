@@ -7,6 +7,6 @@ jobs:
     uses: wpdas/alem/.github/workflows/deploy.yml@main
     with:
       signer-account-address: wendersonpires.near
-      signer-public-key: ed25519:9jDaFsG11jftUEQbccjUMsT39rZ3dzWJcDLoyT2qJvzb
+      signer-public-key: ed25519:7T3RQbpsWpqmM8R6s7iwnnrywzCvRUXWQcifB9q4H26N
     secrets:
       SIGNER_PRIVATE_KEY: ${{ secrets.SIGNER_PRIVATE_KEY }}
