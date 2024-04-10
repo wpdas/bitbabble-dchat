@@ -13,7 +13,6 @@ const App = () => {
   useEffect(() => {
     // clean up storage
     if (!context.accountId) {
-      console.log("Shoud i go?");
       cleanUpChatList();
     }
   }, [context.accountId]);
