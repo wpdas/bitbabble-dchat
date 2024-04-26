@@ -3,23 +3,37 @@ import en from "./en";
 
 // TODO: Fazer video tutorial disso
 // Code builder for "formatTimestamp"
-const formatTimestampCode = (timestamp: number) => {
-  const code = `
-    (() => {
-      TimeAgo.addDefaultLocale({
-        ${en}
-      });
+// const formatTimestampCode = (timestamp: number) => {
+//   const code = `
+//     (() => {
+//       TimeAgo.addDefaultLocale({
+//         ${en}
+//       });
 
-      return new TimeAgo('en-US').format(new Date(${timestamp}));
-    })()
-`;
-  return code;
-};
+//       return new TimeAgo('en-US').format(new Date(${timestamp}));
+//     })()
+// `;
+//   return code;
+// };
+
+// const timeAgo = {
+//   formatTimestamp: (timestamp: number, onComplete: (data: string) => void) =>
+//     ({
+//       code: formatTimestampCode(timestamp),
+//       onComplete,
+//     } as UseModuleProps),
+// };
 
 const timeAgo = {
+  moduleSetup: `
+  TimeAgo.addDefaultLocale({
+    ${en}
+  })
+  `,
   formatTimestamp: (timestamp: number, onComplete: (data: string) => void) =>
     ({
-      code: formatTimestampCode(timestamp),
+      setupCode: timeAgo.moduleSetup,
+      code: `new TimeAgo('en-US').format(new Date(${timestamp}))`,
       onComplete,
     } as UseModuleProps),
 };
