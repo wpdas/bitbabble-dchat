@@ -9,7 +9,6 @@ type Props = {
   onSelect?: (profileInfo: SimpleProfileInfo) => void;
 };
 
-// TODO: Criar uma forma no Router de deixar paginas pre-renderizadas
 const ContactItems = ({ accountIds, onSelect }: Props) => {
   const [items, setItems] = useState<SimpleProfileInfo[]>([]);
   const [ready, setReady] = useState(false);
