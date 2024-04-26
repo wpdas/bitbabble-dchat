@@ -5,8 +5,8 @@
   "repository": "git@github.com:wpdas/create-alem-dapp.git",
   "license": "MIT",
   "scripts": {
-    "start": "MINIFY=false NODE_ENV=development alem dev --network testnet",
-    "start:mainnet": "MINIFY=false NODE_ENV=development alem dev",
+    "start": "alem dev --network testnet",
+    "start:mainnet": "development alem dev",
     "build": "alem build",
     "deploy:mainnet": "npm run build; alem deploy",
     "deploy:testnet": "npm run build; alem deploy --network testnet"
